@@ -1,0 +1,151 @@
+/* Map Section */
+.map-section {
+    padding: 40px 0 0;
+    background-color: var(--white);
+}
+
+.map-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.map-subtitle {
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 32px;
+}
+
+#map {
+    height: calc(100vh - 200px);
+    min-height: 600px;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Custom marker popup styles */
+.leaflet-popup-content-wrapper {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-popup-content {
+    margin: 20px;
+    min-width: 250px;
+}
+
+.dome-popup {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.dome-popup h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--primary-red);
+}
+
+.dome-popup .dome-address {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.dome-popup .dome-address svg {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.dome-popup .dome-availability {
+    margin-bottom: 16px;
+}
+
+.dome-popup .dome-availability-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.dome-popup .dome-time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.dome-popup .time-badge {
+    padding: 6px 12px;
+    background-color: var(--light-grey);
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.dome-popup .time-badge.available {
+    background-color: #E8F5E9;
+    border-color: #4CAF50;
+    color: #2E7D32;
+}
+
+.dome-popup .time-badge.booked {
+    background-color: #FFEBEE;
+    border-color: #EF5350;
+    color: #C62828;
+    opacity: 0.6;
+}
+
+.dome-popup .dome-book-btn {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: var(--primary-red);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 8px;
+}
+
+.dome-popup .dome-book-btn:hover {
+    background-color: #C1121F;
+}
+
+/* Custom marker icon */
+.custom-marker {
+    background: transparent;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .map-title {
+        font-size: 32px;
+    }
+    
+    .map-subtitle {
+        font-size: 16px;
+    }
+    
+    #map {
+        height: calc(100vh - 150px);
+        min-height: 500px;
+    }
+    
+    .leaflet-popup-content {
+        min-width: 200px;
+    }
+}
+

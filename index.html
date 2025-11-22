@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPSULE • SPACES - Your Silent Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="logo.svg" alt="CAPSULE • SPACES Logo" style="width: 40px; height: 40px; object-fit: contain;">
+                </div>
+                <span class="logo-text">CAPSULE • SPACES</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-btn active">Home</a>
+                <a href="map.html" class="nav-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8 14C4.69 14 2 11.31 2 8C2 4.69 4.69 2 8 2C11.31 2 14 4.69 14 8C14 11.31 11.31 14 8 14Z" fill="currentColor"/>
+                        <path d="M8 4L6 6H10L8 4Z" fill="currentColor"/>
+                    </svg>
+                    Find Domes
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Modal -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-dark"></div>
+            <div class="hero-image"></div>
+        </div>
+        
+        <!-- Modal Dialog -->
+        <div class="modal" id="heroModal">
+            <div class="modal-content">
+                <button class="modal-close" id="closeModal">&times;</button>
+                
+                <div class="modal-section">
+                    <h2 class="modal-title">The Problem</h2>
+                    <p class="modal-text">
+                        Do you want to work in peace and quiet, but the children in the school are noisy and the child at home prevents you from concentrating? Struggling to find a silent space where you can truly focus on your studies or work?
+                    </p>
+                </div>
+
+                <div class="modal-section">
+                    <div class="modal-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 8C16 8 8 12 8 18V24C8 30 16 34 24 34C32 34 40 30 40 24V18C40 12 32 8 24 8Z" stroke="white" stroke-width="2" fill="none"/>
+                            <path d="M24 18L20 22H28L24 18Z" fill="white"/>
+                            <circle cx="24" cy="26" r="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <h2 class="modal-title">The Apple Dome: Your Solution</h2>
+                    <p class="modal-text">
+                        Experience complete silence in our revolutionary apple-shaped workspace. Designed specifically for those who need absolute quiet, the Apple Dome provides a soundproof sanctuary where nothing can disturb your concentration.
+                    </p>
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" fill="white"/>
+                            <path d="M10 5L7.5 7.5H12.5L10 5Z" fill="white"/>
+                        </svg>
+                        Find Nearest Dome
+                    </button>
+                    <button class="btn-secondary" onclick="window.location.href='booking.html'">
+                        Book Your Silent Space
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <h2 class="section-title">Why Choose the Apple Dome?</h2>
+            <p class="section-subtitle">
+                Perfect for students, remote workers, researchers, or anyone who needs absolute silence to achieve their best work. Every detail is designed to eliminate distractions.
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L8 12H24L16 4Z" fill="#E63946"/>
+                            <path d="M8 12V20C8 24.4183 11.5817 28 16 28C20.4183 28 24 24.4183 24 20V12" stroke="#E63946" stroke-width="2" fill="none"/>
+                            <line x1="12" y1="20" x2="20" y2="20" stroke="#E63946" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">100% Soundproof</h3>
+                    <p class="feature-text">Complete acoustic isolation ensures absolute silence. No external noise can penetrate the dome.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="8" y="12" width="16" height="16" rx="2" fill="#E63946"/>
+                            <path d="M12 12V8C12 6.89543 12.8954 6 14 6H18C19.1046 6 20 6.89543 20 8V12" stroke="white" stroke-width="2"/>
+                            <circle cx="16" cy="20" r="2" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Privacy Guaranteed</h3>
+                    <p class="feature-text">Your personal sanctuary. No interruptions, no distractions, just you and your work.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="10" stroke="#E63946" stroke-width="2" fill="none"/>
+                            <path d="M16 10V16L20 20" stroke="#E63946" stroke-width="2"/>
+                            <line x1="16" y1="6" x2="16" y2="10" stroke="#E63946" stroke-width="2"/>
+                            <line x1="22" y1="16" x2="26" y2="16" stroke="#E63946" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Enhanced Concentration</h3>
+                    <p class="feature-text">The silent environment allows for deep focus and maximum productivity.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="8" y="6" width="16" height="20" rx="2" fill="#E63946"/>
+                            <line x1="12" y1="12" x2="20" y2="12" stroke="white" stroke-width="2"/>
+                            <line x1="12" y1="16" x2="20" y2="16" stroke="white" stroke-width="2"/>
+                            <line x1="12" y1="20" x2="16" y2="20" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Climate Control</h3>
+                    <p class="feature-text">Optimal temperature and air quality maintained automatically for your comfort.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="10" stroke="#E63946" stroke-width="2" fill="none"/>
+                            <path d="M16 8V16L20 20" stroke="#E63946" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">24/7 Availability</h3>
+                    <p class="feature-text">Work on your schedule. The dome is available whenever you need silence.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="12" cy="16" r="4" fill="#E63946"/>
+                            <circle cx="20" cy="16" r="4" fill="#E63946"/>
+                            <path d="M8 24C8 20 10 18 12 18C14 18 16 20 16 24" stroke="#E63946" stroke-width="2" fill="none"/>
+                            <path d="M16 24C16 20 18 18 20 18C22 18 24 20 24 24" stroke="#E63946" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Individual Spaces</h3>
+                    <p class="feature-text">Each dome is designed for solo use, ensuring you won't be disturbed by others.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For Section -->
+    <section class="who-is-for">
+        <div class="container">
+            <h2 class="section-title">Who Is This For?</h2>
+            <p class="section-subtitle">
+                The Apple Dome is relevant for anyone struggling with noise distractions in today's busy world.
+            </p>
+            
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 8L12 16H28L20 8Z" fill="#E63946"/>
+                            <rect x="8" y="16" width="24" height="16" rx="2" fill="#E63946"/>
+                            <line x1="12" y1="20" x2="28" y2="20" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="audience-title">Students & Learners</h3>
+                    <p class="audience-text">Escape noisy dorms, crowded libraries, and busy households. Study for exams, write papers, or complete assignments in complete silence.</p>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="10" y="8" width="20" height="24" rx="2" fill="#E63946"/>
+                            <line x1="14" y1="14" x2="26" y2="14" stroke="white" stroke-width="2"/>
+                            <line x1="14" y1="18" x2="26" y2="18" stroke="white" stroke-width="2"/>
+                            <line x1="14" y1="22" x2="20" y2="22" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="audience-title">Remote Workers</h3>
+                    <p class="audience-text">No more background noise during important calls. Work from a professional, quiet environment when home isn't conducive to productivity.</p>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <rect x="8" y="10" width="24" height="20" rx="2" fill="#E63946"/>
+                            <line x1="12" y1="16" x2="28" y2="16" stroke="white" stroke-width="2"/>
+                            <line x1="12" y1="20" x2="28" y2="20" stroke="white" stroke-width="2"/>
+                            <line x1="12" y1="24" x2="20" y2="24" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="audience-title">Researchers & Writers</h3>
+                    <p class="audience-text">Deep thinking requires deep silence. Perfect for researchers, authors, and anyone who needs uninterrupted concentration.</p>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="8" stroke="#E63946" stroke-width="2" fill="none"/>
+                            <path d="M20 12V20L24 24" stroke="#E63946" stroke-width="2"/>
+                            <rect x="16" y="8" width="8" height="4" rx="1" fill="#E63946"/>
+                        </svg>
+                    </div>
+                    <h3 class="audience-title">Creative Professionals</h3>
+                    <p class="audience-text">Musicians, podcasters, and content creators benefit from the soundproof environment for recording and focused creative work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Relevant Section -->
+    <section class="why-relevant">
+        <div class="container">
+            <h2 class="section-title">Why the Apple Dome is More Relevant Than Ever</h2>
+            
+            <div class="relevance-grid">
+                <div class="relevance-card">
+                    <div class="relevance-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L8 12H24L16 4Z" fill="#E63946"/>
+                            <rect x="6" y="12" width="20" height="16" rx="2" fill="#E63946"/>
+                            <line x1="10" y1="18" x2="22" y2="18" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="relevance-title">Rise of Remote Work</h3>
+                    <p class="relevance-text">More people working from home need professional quiet spaces away from household distractions.</p>
+                </div>
+
+                <div class="relevance-card">
+                    <div class="relevance-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="8" width="8" height="8" fill="#1D3557"/>
+                            <rect x="12" y="12" width="8" height="8" fill="#457B9D"/>
+                            <rect x="20" y="16" width="8" height="8" fill="#A8DADC"/>
+                            <rect x="4" y="16" width="8" height="8" fill="#E63946"/>
+                        </svg>
+                    </div>
+                    <h3 class="relevance-title">Urban Living</h3>
+                    <p class="relevance-text">Increasing population density means more noise pollution and fewer quiet places to focus.</p>
+                </div>
+
+                <div class="relevance-card">
+                    <div class="relevance-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="12" r="6" fill="#E63946"/>
+                            <circle cx="16" cy="20" r="8" stroke="#E63946" stroke-width="2" fill="none"/>
+                            <path d="M12 24L16 20L20 24" stroke="#E63946" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="relevance-title">Mental Health Awareness</h3>
+                    <p class="relevance-text">Growing understanding of how noise affects concentration, stress levels, and overall well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience the Space</h2>
+            <p class="section-subtitle">Take a glimpse inside our beautifully designed dome workspace.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-image-1"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-image-2"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image gallery-image-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="logo.svg" alt="CAPSULE • SPACES Logo" style="width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1);">
+                        </div>
+                        <span class="logo-text">CAPSULE • SPACES</span>
+                    </div>
+                    <p class="footer-description">Revolutionary workspace design for the modern professional.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Features</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <a href="mailto:hello@appledome.com" class="footer-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="2" y="4" width="12" height="8" rx="1" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M2 4L8 8L14 4" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                        hello@appledome.com
+                    </a>
+                    <a href="tel:+15551234567" class="footer-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 2C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H13C13.5523 14 14 13.5523 14 13V3C14 2.44772 13.5523 2 13 2H3Z" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M6 4H10M6 7H10M6 10H8" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                        +1 (555) 123-4567
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Domes - CAPSULE • SPACES</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="logo.svg" alt="CAPSULE • SPACES Logo" style="width: 40px; height: 40px; object-fit: contain;">
+                </div>
+                <span class="logo-text">CAPSULE • SPACES</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="map.html" class="nav-link active">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 0C3.58 0 0 3.58 0 8C0 12.42 3.58 16 8 16C12.42 16 16 12.42 16 8C16 3.58 12.42 0 8 0ZM8 14C4.69 14 2 11.31 2 8C2 4.69 4.69 2 8 2C11.31 2 14 4.69 14 8C14 11.31 11.31 14 8 14Z" fill="currentColor"/>
+                        <path d="M8 4L6 6H10L8 4Z" fill="currentColor"/>
+                    </svg>
+                    Find Domes
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h1 class="map-title">Find Your Nearest Dome</h1>
+            <p class="map-subtitle">Click on any marker to see available booking times and location details</p>
+        </div>
+        <div id="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <img src="logo.svg" alt="CAPSULE • SPACES Logo" style="width: 40px; height: 40px; object-fit: contain; filter: brightness(0) invert(1);">
+                        </div>
+                        <span class="logo-text">CAPSULE • SPACES</span>
+                    </div>
+                    <p class="footer-description">Revolutionary workspace design for the modern professional.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Features</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Support</h4>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Contact</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <a href="mailto:hello@appledome.com" class="footer-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <rect x="2" y="4" width="12" height="8" rx="1" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M2 4L8 8L14 4" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                        hello@appledome.com
+                    </a>
+                    <a href="tel:+15551234567" class="footer-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 2C2.44772 2 2 2.44772 2 3V13C2 13.5523 2.44772 14 3 14H13C13.5523 14 14 13.5523 14 13V3C14 2.44772 13.5523 2 13 2H3Z" stroke="white" stroke-width="1.5" fill="none"/>
+                            <path d="M6 4H10M6 7H10M6 10H8" stroke="white" stroke-width="1.5"/>
+                        </svg>
+                        +1 (555) 123-4567
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
+
